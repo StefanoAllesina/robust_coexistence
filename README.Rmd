@@ -75,7 +75,7 @@ $$
 $$
 have a positive solution. We provide two options: `get_alpha_F(B, n, rho)` can be used for small matrices $B$, and computes an exact solution by computing the eigenvalues of $n + 1$ matrices; `get_alpha_F_large_random_matrix(B, n, rho)` uses an alternative search algorithm that is better suited for larger matrices.
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 source("code/find_alpha_F.R")
 set.seed(1)
 # example
@@ -88,7 +88,7 @@ get_alpha_F_large_random_matrix(B, 25, 1)
 
 To compute $\alpha_F$ for several random matrices, use `run_simulation`
 
-```{r, eval=FALSE}
+```{r, eval=FALSE, warning=FALSE, message=FALSE}
 set.seed(1)
 nsim <- 2500
 source("code/build_matrices.R")
@@ -103,7 +103,7 @@ run_simulation(n = 250, dist = "beta", rho = -1, sk = 1, nsim = nsim)
 
 For each of the three approximations presented in the manuscript (based on small-rank perturbations, using resolvents, using the Richardson's iteration) a file `approximation_small_rank.R` (or `_richardson.R`, or `_resolvent.R`) contains the function `pf_approximations(alpha_values, n, rho, dist, sk)`, which returns the approximate probability of feasibility for the values `alpha_values` (which can be a vector). An example of how to compute these probabilities is contained in `plot_approximations.R`, which computes all three approximations for a simulation of the type specified above.
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 source("code/plot_approximations.R")
 plot_approximations("results/n_250_rho_0_dist_normal_sk_0.csv")
 ```

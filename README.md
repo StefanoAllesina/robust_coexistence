@@ -157,13 +157,4 @@ source("code/plot_approximations.R")
 plot_approximations("results/n_250_rho_0_dist_normal_sk_0.csv")
 ```
 
-    ## Rows: 2500 Columns: 5
-    ## ── Column specification ────────────────────────────────────────────────────────
-    ## Delimiter: ","
-    ## chr (1): dist
-    ## dbl (4): n, rho, sk, alpha_F
-    ## 
-    ## ℹ Use `spec()` to retrieve the full column specification for this data.
-    ## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
-
 ![](README_files/figure-markdown_github/unnamed-chunk-5-1.png)

@@ -4,6 +4,8 @@ The folder `code` contains the code to generate random matrices, compute
 *α*<sub>*F*</sub> and calculate the transitions to and from feasibility
 (for small matrices).
 
+The folder `Mathematica_Richardson` contains `Mathematica` notebooks that verify the correctness of the equations in Sec B1 of the Supplementary Information.
+
 ### Required libraries
 
 ``` r
